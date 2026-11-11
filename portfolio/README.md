@@ -7,6 +7,10 @@ I work across web interfaces, application logic, APIs, content workflows, and da
 **Main stack:** TypeScript · React · Next.js · Node.js · Python · MongoDB · PostgreSQL  
 **Availability:** Open to remote and international full-stack, frontend, and backend opportunities.
 
+## Public visual previews
+
+**[View live website thumbnails and open public products](visual-previews/README.md)**: OpenMadrasah, Innovvo Tech's portfolio, and an Innovvo Tools calculator. These are third-party generated, non-archived public-page previews, with direct links to the actual sites and clear evidence limitations.
+
 ## Recent work: engineering case studies
 
 | Case study | Area | Technical emphasis | Evidence level |
