@@ -1,64 +1,44 @@
-# Case study: Engineering quality and testable publishing workflows
+# Engineering Practices: Testing and Release Quality
 
-**Discipline:** Application verification · Release checks · Backend/frontend boundaries  
-**Evidence:** Private application package manifests and an automated test file reviewed in November 2026  
-**Source availability:** Private. This account is about engineering practices, not a published test report.
+**Automated checks · Application reliability · Product workflows**
 
-## Why this work matters
+Good software is more than a screen that looks finished. Behind the interface are business rules, integrations, and failure states that need deliberate attention.
 
-Content sites and reader-facing products can have deceptively complex edge cases. A page may render while a webhook contract is wrong, a subscription path mishandles consent, or a catalogue item is presented incorrectly. These are business-logic risks that deserve explicit checks.
+## Testing meaningful workflows
 
-## Verified evidence in project configuration
-
-One recent Next.js codebase defines a production build sequence that **runs a publishing-related test command before building the application**:
+In the Innovvo Tech codebase, the build configuration runs publishing-related checks before the Next.js application build.
 
 ```mermaid
 flowchart LR
-  C["Code change"] --> T["Publishing checks"]
-  T -->|pass| B["Next.js build"]
-  T -->|fail| F["Build blocked"]
-  B --> R["Build artifact"]
+  C["Code changes"] --> T["Automated checks"]
+  T -->|Pass| B["Application build"]
+  T -->|Fail| F["Investigate and fix"]
 ```
 
-*Simplified representation of the package-script sequence. It does not assert that every deployment follows this path or that the latest run passed.*
+The project includes checks relating to:
 
-The repository declares checks concerning these categories:
+- Publishing and shared application logic
+- Catalogue behavior and reader-facing workflows
+- Email template generation
+- Anti-spam protections and request handling
+- Data contracts between connected features
 
-| Test area | Risk addressed |
-| --- | --- |
-| Webhook / interface contracts | Incompatible payloads or unexpected request structures |
-| Shared publishing logic | Divergent behavior between related workflows |
-| Anti-spam controls | Abusive or unintended submissions |
-| Email templates | Broken or inconsistent message generation |
-| Catalogue rules | Incorrect content or discovery behavior |
-| Reader-oriented flows | Broken user journeys or delivery logic |
+The test modules use Node's test and assertion utilities. Other backend work also uses development tools such as Vitest and Supertest.
 
-A reviewed test module uses Node's built-in test and assertion APIs. A separate backend project also declares **Vitest** and **Supertest** as testing tools. The presence of these dependencies alone does not prove the number, quality, or passing status of tests in that second project.
+## Engineering principles
 
-## Engineering approach
+**Test the workflows that matter.** Prioritize behavior users rely on instead of chasing coverage numbers in isolation.
 
-- Put checks near the business rules most likely to affect users.
-- Validate application behavior at module and integration boundaries.
-- Prefer reproducible local tests over claims based solely on screenshots.
-- Treat email, consent, and publishing paths as deliberate workflows.
-- Keep test environments and records separate from production data.
+**Keep changes reviewable.** Separate content updates, code changes, and deployments where each has a different purpose.
 
-## What still needs independent verification
+**Design for failure.** Loading states, errors, validation, and safe retries are part of the user experience.
 
-- Latest run status and regression history
-- Exact test coverage and mutation resistance
-- End-to-end behavior against disposable test services
-- Accessibility testing and performance budgets
-- Failure handling under realistic production load
+**Keep environments separate.** Test with isolated data and avoid using production records for experiments.
 
-These are **not presented as completed audits**.
+## Technologies and practices
 
-## Questions I can discuss in an interview
+**Node.js testing · Test assertions · Integration boundaries · TypeScript · Build checks · Code review**
 
-1. What should prevent a release when a publishing contract fails?
-2. How should email and subscription paths be tested without sending real customer email?
-3. Where are unit, integration, and end-to-end tests most valuable?
-4. How should external dependencies be isolated in automated tests?
-5. What evidence would justify confidence in a release beyond a green build?
+This overview describes the testing approaches visible in the projects; it is not a published test-coverage report.
 
-[← Engineering portfolio](../README.md)
+[← All projects](../README.md)
