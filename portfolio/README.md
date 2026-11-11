@@ -9,7 +9,7 @@ I work across web interfaces, application logic, APIs, content workflows, and da
 
 ## Public visual previews
 
-**[View live website thumbnails and open public products](visual-previews/README.md)**: OpenMadrasah, Innovvo Tech's portfolio, and an Innovvo Tools calculator. These are third-party generated, non-archived public-page previews, with direct links to the actual sites and clear evidence limitations.
+**[View six public product previews](visual-previews/README.md)**: OpenMadrasah, Innovvo Tech, Innovvo Tools, PartyDey, Meenahfection Store, and Occassionly. The gallery includes public links, on-demand thumbnails, and source/verification caveats. These are third-party generated, non-archived public-page previews, with direct links to the actual sites and clear evidence limitations.
 
 ## Recent work: engineering case studies
 
