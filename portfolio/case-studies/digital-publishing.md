@@ -1,35 +1,42 @@
-# Case study: Digital publishing and reader experience
+# Innovvo Books: Digital Publishing and Reader Experience
 
-**Domain:** Digital catalogue, book discovery, and companion learning resources  
-**Code visibility:** Private repository; non-sensitive product overview.
+**Publishing technology · Product UX · Learning resources**
 
-## Context
+Innovvo Books explores how a book can become the starting point for a richer reading experience, with clear discovery pages and relevant companion materials.
 
-A publishing-focused product needs clear pathways from discovering a title to understanding its contents and finding accompanying reader material.
+## The challenge
 
-## Product scope evidenced in repository documentation
+A reader who discovers a title may also want to learn more about it, explore related books, or find activities associated with the content. Those needs can get lost when information lives in separate places.
 
-- A public-facing book catalogue concept
-- Individual book detail pages
-- Companion activity content for readers
-- Information architecture for a reader community
+## The product approach
 
-The inspected README describes an early **frontend-only preview**. It is not evidence that every planned subscription, mailing, or backend feature is implemented.
+The frontend work covers:
 
-## Technical and product considerations
+- A browsable book catalogue
+- Individual book detail experiences
+- Companion activity pages for selected titles
+- Reader-focused information and community pathways
 
-- Presenting multiple books through reusable content structures
-- Designing helpful experiences for both parents and young readers
-- Making companion resources discoverable from the catalogue
-- Distinguishing a frontend preview from a live data-backed service
-- Keeping privacy and opt-in requirements visible during product development
+These elements support discovery without overwhelming visitors with unnecessary steps.
 
-## What this demonstrates
+## Reader journeys
 
-This case study is an example of connecting **product design, publishing workflows, and frontend implementation** rather than treating the site as a collection of unrelated pages.
+```mermaid
+flowchart LR
+  R["Reader"] --> C["Book catalogue"]
+  C --> B["Book details"]
+  B --> M["Companion materials"]
+  B --> N["Related titles"]
+```
 
-## Evidence and boundaries
+## Design priorities
 
-The documented scope was checked against a private project README. No mailing-list counts, sales figures, private architecture, or customer data are disclosed, and the README's preview scope is not presented as a verified live deployment.
+**Clarity first.** Make it easy to understand who each book is for and what it offers.
 
-[← All case studies](../README.md)
+**Useful extras.** Connect readers to activities or resources that extend the original material.
+
+**Consistent presentation.** Structure content so additional titles can be introduced without redesigning the entire experience.
+
+The repository originally documented a frontend preview; this case study focuses on the product design and publicly describable work rather than asserting a particular live release status.
+
+[← All projects](../README.md)
