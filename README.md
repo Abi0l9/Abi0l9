@@ -2,41 +2,52 @@
 
 **Full-Stack Software Developer** · React · Next.js · TypeScript · Node.js
 
-Based in Nigeria · Open to remote and international opportunities
+**Based in Nigeria | Open to remote and international engineering opportunities**
 
-I build practical web applications, from responsive interfaces to backend APIs and data-driven workflows. My interests include education technology, e-commerce, business tools, and developer-friendly systems that are maintainable beyond the first release.
+I build web products that support real work: learning experiences, commerce journeys, business operations, and content-driven platforms. I enjoy connecting thoughtful interfaces with reliable application logic, APIs, and data.
 
-I work across the full development cycle: turning requirements into features, designing APIs, working with databases, debugging, testing, and shipping applications.
+## Selected recent engineering work
+
+Some of my newer commercial and product repositories are private. These **sanitized case studies** explain the scope and technologies without exposing private code or client information.
+
+| Case study | Focus | Engineering themes |
+| --- | --- | --- |
+| [Modern product platform](portfolio/case-studies/modern-product-platform.md) | Customer-facing product + admin experience | Next.js, React, TypeScript, data fetching, validation |
+| [Technology studio website](portfolio/case-studies/technology-studio.md) | Products, portfolio, content and contact pathways | Next.js 16 App Router, React 19, Tailwind CSS |
+| [Digital publishing experience](portfolio/case-studies/digital-publishing.md) | Catalogue, book details and reader resources | Information architecture, product UX, frontend delivery |
+| [Social-to-store retail discovery](portfolio/case-studies/retail-discovery.md) | Mobile shopping experience for social-media traffic | Product discovery, navigation and conversion-oriented UX |
+
+**[Explore my engineering portfolio →](portfolio/README.md)**
+
+> Case studies describe relevant work, not public source-code access or independently audited production results.
+
+## Public code you can inspect
+
+These earlier projects provide code samples across different stacks:
+
+- **[Connectify](https://github.com/Abi0l9/Connectify-frontend):** React, Apollo Client, GraphQL subscriptions, Redux
+- **[Stock Keeper](https://github.com/Abi0l9/stock-keeper):** React, TypeScript, Redux Toolkit, Material UI
+- **[EduBank](https://github.com/Abi0l9/EduBank):** Python, Flask, SQLAlchemy
+- **[MyShop](https://github.com/Abi0l9/myshop-fe):** Vue 3, TypeScript, Vite
+- **[Task Manager](https://github.com/Abi0l9/task-manager):** Express, MongoDB, EJS
 
 ## Technical toolkit
 
-- **Frontend:** JavaScript, TypeScript, React, Next.js, Vue, Tailwind CSS, Material UI
-- **Backend:** Node.js, Express, REST APIs, GraphQL, Python, Flask
-- **Data:** MongoDB, Mongoose, PostgreSQL, SQLAlchemy
-- **Engineering:** Git, GitHub, API integration, authentication, testing, deployment
+| Area | Technologies |
+| --- | --- |
+| **Frontend** | React, Next.js, Vue, TypeScript, JavaScript, Tailwind CSS, Material UI |
+| **Backend** | Node.js, Express, REST APIs, GraphQL, Python, Flask |
+| **Data** | MongoDB, Mongoose, PostgreSQL, SQLAlchemy |
+| **Workflow** | Git, GitHub, API integration, testing, deployment |
 
-## Selected public projects
+## What I care about
 
-| Project | What it demonstrates | Stack |
-| --- | --- | --- |
-| [Stock Keeper](https://github.com/Abi0l9/stock-keeper) | Inventory dashboard with stock, purchases, and sales views | React, TypeScript, Redux Toolkit, Material UI |
-| [Connectify](https://github.com/Abi0l9/Connectify-frontend) | Social-app frontend with feeds, friend interactions, and real-time GraphQL subscriptions | React, Apollo Client, GraphQL, Redux |
-| [EduBank](https://github.com/Abi0l9/EduBank) | School registration, payment-record workflows, and receipt references | Python, Flask, SQLAlchemy |
-| [MyShop](https://github.com/Abi0l9/myshop-fe) | E-commerce frontend built with a different UI ecosystem | Vue 3, TypeScript, Vite, Tailwind CSS |
-| [Task Manager](https://github.com/Abi0l9/task-manager) | Server-rendered task management backed by a database | Node.js, Express, MongoDB, EJS |
-
-> Much of my current product and client work is maintained in private repositories. The projects above provide public code samples across different stacks.
-
-## Areas of interest
-
-- Building accessible learning and educational platforms
-- Developing reliable APIs and business workflows
-- Improving performance, usability, and maintainability
-- Collaborating with teams on useful, well-documented products
+Clear requirements, usable interfaces, sensible component boundaries, maintainable APIs, and honest engineering trade-offs.
 
 ## Let's connect
 
-I'm interested in **full-stack, frontend, and backend engineering opportunities**, including international and remote teams.
+I'm open to conversations about **full-stack, frontend, and backend developer roles**, including remote and international teams.
 
-- **Email:** [monsurkashy@gmail.com](mailto:monsurkashy@gmail.com)
-- **GitHub:** [github.com/Abi0l9](https://github.com/Abi0l9)
+**Email:** [monsurkashy@gmail.com](mailto:monsurkashy@gmail.com)
+
+**Engineering portfolio:** [Browse case studies](portfolio/README.md)
