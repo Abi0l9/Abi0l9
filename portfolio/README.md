@@ -1,41 +1,53 @@
-# Engineering Portfolio
+# Engineering portfolio
 
-## Monsur Muhammad | Full-Stack Software Developer
+### Monsur Muhammad · Full-Stack Software Developer
 
-This portfolio presents **recent product work** as short, recruiter-friendly case studies. Some underlying repositories are private because they contain commercial or client work. The summaries below describe the **engineering scope and technology**, without disclosing source code, credentials, private customer data, or unpublished business information.
+I work across web interfaces, application logic, APIs, content workflows, and data-driven products. The goal of this portfolio is to make **recent engineering decisions understandable and reviewable**, while keeping commercial repositories private.
 
-**Focus:** TypeScript, React, Next.js, Node.js, API integration, product interfaces, and practical business systems.
+**Main stack:** TypeScript · React · Next.js · Node.js · Python · MongoDB · PostgreSQL  
+**Availability:** Open to remote and international full-stack, frontend, and backend opportunities.
 
-### Selected product work
+## Recent work: engineering case studies
 
-| Case study | Domain | What it demonstrates |
+| Case study | Area | Technical emphasis | Evidence level |
+| --- | --- | --- | --- |
+| [Customer product and operations dashboard](case-studies/modern-product-platform.md) | Product applications | Next.js + React interfaces, TypeScript, async state, validation | Repository-reviewed |
+| [Product and publishing platform](case-studies/technology-studio.md) | Full-stack web | Next.js 16, content lifecycle, build-time checks | Repository-reviewed |
+| [Quality and testable workflows](case-studies/quality-and-testing.md) | Engineering reliability | Publishing-related checks, test tooling, release boundaries | Repository-reviewed |
+| [Digital publishing and reader experience](case-studies/digital-publishing.md) | Content and education | Catalogue discovery, companion resources, frontend product design | Repository documentation |
+| [Social-to-store retail discovery](case-studies/retail-discovery.md) | Commerce UX | Mobile journeys, campaign destinations, product discovery | Product/UX case study |
+
+**[View simplified architecture diagrams](architecture/README.md)** · **[How portfolio claims are verified](evidence-standards.md)**
+
+> The architecture diagrams are intentionally conceptual. They do not disclose internal service topology, credentials, customer information, or private code.
+
+## Public code samples
+
+These are older, **independently inspectable source repositories**. They show practical coding examples but are not presented as the newest production work.
+
+| Code sample | Technology | What to inspect |
 | --- | --- | --- |
-| [Modern product platform](case-studies/modern-product-platform.md) | Web product and operations | Separate customer and admin web interfaces; typed state and API interactions |
-| [Technology studio and publishing platform](case-studies/technology-studio.md) | Company website and content | Next.js App Router, structured site content, product and work presentation |
-| [Digital publishing experience](case-studies/digital-publishing.md) | Publishing and education | Catalogue, book detail pages, and companion content experience |
-| [Social-to-store retail discovery](case-studies/retail-discovery.md) | E-commerce | Product discovery workflows designed for social-media-driven visitors |
+| [Connectify frontend](https://github.com/Abi0l9/Connectify-frontend) | React, Apollo GraphQL, Redux | Queries, subscriptions, frontend state |
+| [Stock Keeper](https://github.com/Abi0l9/stock-keeper) | React, TypeScript, Material UI | Components, routing, inventory workflow |
+| [EduBank](https://github.com/Abi0l9/EduBank) | Flask, SQLAlchemy | Backend models, school payment-record workflow |
+| [MyShop](https://github.com/Abi0l9/myshop-fe) | Vue 3, TypeScript, Vite | Vue pages, routing, frontend structure |
+| [Task Manager](https://github.com/Abi0l9/task-manager) | Express, Mongoose, EJS | Routes, controllers, data model |
 
-### Public source-code samples
+## Areas I can discuss technically
 
-For independently reviewable code rather than case studies, see:
+- React/Next.js application structure and component boundaries
+- Typed frontend state, HTTP requests, and validation
+- Server-side workflows and persistence boundaries
+- The difference between editable content and deployable application code
+- Testing around critical user journeys and integrating checks into a build
+- Product UX for content, learning, and commerce experiences
 
-- [Connectify frontend](https://github.com/Abi0l9/Connectify-frontend): React, Apollo GraphQL subscriptions, Redux
-- [Stock Keeper](https://github.com/Abi0l9/stock-keeper): React, TypeScript, Redux Toolkit, Material UI
-- [EduBank](https://github.com/Abi0l9/EduBank): Python, Flask, SQLAlchemy
-- [MyShop frontend](https://github.com/Abi0l9/myshop-fe): Vue 3, TypeScript, Vite
-- [Task Manager](https://github.com/Abi0l9/task-manager): Express, Mongoose, EJS
+## What this portfolio does *not* claim
 
-These earlier open-source samples complement, rather than represent the freshness of, the product case studies.
+It does not claim measured revenue growth, production uptime, comprehensive security certification, or test coverage that has not been independently verified. Private repository case studies are **not** substitutes for publicly reviewable code.
 
-### How to evaluate this work
+Where appropriate, I can discuss approaches, trade-offs, and lessons in an interview without sharing protected material.
 
-- **Case studies:** high-level product and engineering descriptions. They are *not* independent proof of production performance, proprietary source-code ownership, or deployment status.
-- **Public repositories:** inspectable implementations and setup documentation. Individual runtime behavior and test status have not been independently validated here.
-- **Private code:** not published or available for unrestricted review; technical decisions can be discussed in an interview where disclosure is appropriate.
+## Contact
 
-### Contact
-
-- [GitHub](https://github.com/Abi0l9)
-- [Email](mailto:monsurkashy@gmail.com)
-
-Open to full-stack, frontend, and backend engineering conversations with remote and international teams.
+[GitHub profile](https://github.com/Abi0l9) · [Email](mailto:monsurkashy@gmail.com)
