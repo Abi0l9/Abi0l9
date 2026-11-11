@@ -1,57 +1,100 @@
-# Engineering portfolio
+# Products & Engineering Portfolio
 
-### Monsur Muhammad · Full-Stack Software Developer
+### Monsur Muhammad
+**Full-Stack Developer · Product Engineer**
 
-I work across web interfaces, application logic, APIs, content workflows, and data-driven products. The goal of this portfolio is to make **recent engineering decisions understandable and reviewable**, while keeping commercial repositories private.
+I build software for the way people actually work, learn, organize events, and run businesses. This portfolio brings together selected products, the problems they solve, and the engineering decisions behind them.
 
-**Main stack:** TypeScript · React · Next.js · Node.js · Python · MongoDB · PostgreSQL  
-**Availability:** Open to remote and international full-stack, frontend, and backend opportunities.
+**[View the visual product gallery](visual-previews/README.md)** · **[GitHub profile](https://github.com/Abi0l9)** · **[Email](mailto:monsurkashy@gmail.com)**
 
-## Public visual previews
+## Selected products
 
-**[View six public product previews](visual-previews/README.md)**: OpenMadrasah, Innovvo Tech, Innovvo Tools, PartyDey, Meenahfection Store, and Occassionly. The gallery includes public links, on-demand thumbnails, and source/verification caveats. These are third-party generated, non-archived public-page previews, with direct links to the actual sites and clear evidence limitations.
+### OpenMadrasah · Education technology
 
-## Recent work: engineering case studies
+**[Visit OpenMadrasah](https://www.openmadrasah.com/)**
 
-| Case study | Area | Technical emphasis | Evidence level |
-| --- | --- | --- | --- |
-| [Customer product and operations dashboard](case-studies/modern-product-platform.md) | Product applications | Next.js + React interfaces, TypeScript, async state, validation | Repository-reviewed |
-| [Product and publishing platform](case-studies/technology-studio.md) | Full-stack web | Next.js 16, content lifecycle, build-time checks | Repository-reviewed |
-| [Quality and testable workflows](case-studies/quality-and-testing.md) | Engineering reliability | Publishing-related checks, test tooling, release boundaries | Repository-reviewed |
-| [Digital publishing and reader experience](case-studies/digital-publishing.md) | Content and education | Catalogue discovery, companion resources, frontend product design | Repository documentation |
-| [Social-to-store retail discovery](case-studies/retail-discovery.md) | Commerce UX | Mobile journeys, campaign destinations, product discovery | Product/UX case study |
+An online learning environment for Arabic and Islamic studies. Learners can follow structured subjects and courses, while tutors work through dedicated content and review processes.
 
-**[View simplified architecture diagrams](architecture/README.md)** · **[How portfolio claims are verified](evidence-standards.md)**
+**Use cases:** self-paced Arabic study, Islamic education, course organization, tutor-led learning, and tracking lesson progress.
 
-> The architecture diagrams are intentionally conceptual. They do not disclose internal service topology, credentials, customer information, or private code.
+### PartyDey · Event management
 
-## Public code samples
+**[Explore PartyDey](https://www.partydey.com/)**
 
-These are older, **independently inspectable source repositories**. They show practical coding examples but are not presented as the newest production work.
+A digital platform that brings event hosting, celebration contributions, guest coordination, and admission management into a connected experience.
 
-| Code sample | Technology | What to inspect |
-| --- | --- | --- |
-| [Connectify frontend](https://github.com/Abi0l9/Connectify-frontend) | React, Apollo GraphQL, Redux | Queries, subscriptions, frontend state |
-| [Stock Keeper](https://github.com/Abi0l9/stock-keeper) | React, TypeScript, Material UI | Components, routing, inventory workflow |
-| [EduBank](https://github.com/Abi0l9/EduBank) | Flask, SQLAlchemy | Backend models, school payment-record workflow |
-| [MyShop](https://github.com/Abi0l9/myshop-fe) | Vue 3, TypeScript, Vite | Vue pages, routing, frontend structure |
-| [Task Manager](https://github.com/Abi0l9/task-manager) | Express, Mongoose, EJS | Routes, controllers, data model |
+**Use cases:** organizing celebrations, handling contribution workflows, managing invited guests, and coordinating entry.
 
-## Areas I can discuss technically
+### Occassionly · Event access technology
 
-- React/Next.js application structure and component boundaries
-- Typed frontend state, HTTP requests, and validation
-- Server-side workflows and persistence boundaries
-- The difference between editable content and deployable application code
-- Testing around critical user journeys and integrating checks into a build
-- Product UX for content, learning, and commerce experiences
+**[View Occassionly](https://innovvo-tech.vercel.app/products/occassionly)**
 
-## What this portfolio does *not* claim
+An event-access solution built around digital invitations, QR-based access cards, guest verification, and check-in workflows.
 
-It does not claim measured revenue growth, production uptime, comprehensive security certification, or test coverage that has not been independently verified. Private repository case studies are **not** substitutes for publicly reviewable code.
+**Use cases:** invitation delivery, controlled event entry, guest access management, and reception/check-in operations.
 
-Where appropriate, I can discuss approaches, trade-offs, and lessons in an interview without sharing protected material.
+### Traffmint · Social commerce
 
-## Contact
+**[Explore Traffmint](https://innovvo-tech.vercel.app/products/traffmint)**
 
-[GitHub profile](https://github.com/Abi0l9) · [Email](mailto:monsurkashy@gmail.com)
+A workspace designed to connect product organization, promotion across social channels, and marketing visibility.
+
+**Use cases:** managing product offers, organizing campaigns, sharing trackable links, and understanding promotional activity.
+
+[Technical case study: customer product and operations dashboard](case-studies/modern-product-platform.md)
+
+### Meenahfection Store · E-commerce
+
+**[Visit Meenahfection Store](https://www.meenahfection.store/)**
+
+A fashion and lifestyle shopping experience built around curated collections, product discovery, and a distinctive storefront.
+
+**Use cases:** browsing footwear and accessories, discovering products shared on social media, exploring styled collections, and shopping online.
+
+[Product case study: social-to-store discovery](case-studies/retail-discovery.md)
+
+### Innovvo Tools · Business utilities
+
+**[Try the True Profit & Break-Even Calculator](https://tools.innovvohq.online/tools/true-profit-calculator)**
+
+A collection of practical tools designed to help entrepreneurs reason through everyday business decisions.
+
+**Use cases:** estimating costs, evaluating pricing, understanding margins, and finding a break-even point.
+
+### Innovvo Tech · Technology and product studio
+
+**[Explore Innovvo Tech](https://innovvo-tech.vercel.app/)**
+
+The public home for product engineering work, technology services, product case studies, and published insights.
+
+**Use cases:** exploring software products, understanding engineering capabilities, discovering research, and starting product collaborations.
+
+[Technical case study: content and publishing platform](case-studies/technology-studio.md)
+
+### Innovvo Books · Digital publishing
+
+**[Read the digital publishing case study](case-studies/digital-publishing.md)**
+
+A publishing initiative connecting book discovery, reader resources, and companion learning activities.
+
+**Use cases:** exploring books, locating companion materials, and extending the reading experience beyond the book itself.
+
+## Engineering behind the products
+
+The work spans **React, Next.js, TypeScript, Node.js, Express, GraphQL, MongoDB, and PostgreSQL**, with experience across frontend interfaces, server-side workflows, API integration, and publishing systems.
+
+For readers interested in implementation and trade-offs:
+
+- [Product interfaces and operational dashboards](case-studies/modern-product-platform.md)
+- [Publishing workflows and platform architecture](case-studies/technology-studio.md)
+- [Testing and release practices](case-studies/quality-and-testing.md)
+- [UX and product discovery](case-studies/retail-discovery.md)
+- [Architecture diagrams](architecture/README.md)
+
+## Let's work together
+
+I'm open to **full-stack, frontend, and backend engineering opportunities**, including remote and international roles.
+
+**[Email me](mailto:monsurkashy@gmail.com)** · **[GitHub](https://github.com/Abi0l9)**
+
+*Selected commercial repositories are private. Product pages and case studies provide a public view of the work.*
