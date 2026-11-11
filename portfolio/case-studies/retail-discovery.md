@@ -1,47 +1,40 @@
-# Case study: Social-to-store retail discovery
+# Meenahfection Store: Social-to-Store Shopping
 
-**Discipline:** Product UX · Mobile-first frontend journeys · E-commerce  
-**Evidence:** Product requirements and implementation discussions; source-level audit not included  
-**Source availability:** Private.
+**E-commerce · Mobile-first UX · Product discovery**
 
-## The user problem
+Meenahfection Store is a curated fashion and lifestyle shopping experience. Its product discovery flows are designed for shoppers who may arrive from a social post with a specific item already in mind.
 
-A visitor sees a product in a short-form social video, follows a link, and needs to identify the exact product without browsing an unrelated catalogue. If the destination is confusing, interest can disappear before the customer reaches a product page.
+[Explore Meenahfection Store](https://www.meenahfection.store/)
 
-## The intended journey
+## The challenge
+
+A shopper sees a pair of sneakers, bag, or accessory on social media. They follow the link, but traditional store navigation can make it difficult to locate the exact item they came for.
+
+## The product approach
+
+The store combines curated collections, product pages, and a channel-neutral discovery path for items featured in social content.
+
+### Shopping journey
 
 ```mermaid
 flowchart LR
-  V["Social post"] --> L["Campaign landing page"]
-  L --> F["Featured product discovery"]
-  F --> P["Product details"]
-  P --> A["Existing order flow"]
+  S["Social content"] --> F["Featured products"]
+  F --> P["Product detail page"]
+  P --> O["Order journey"]
 ```
 
-*Journey map, not an audited representation of internal application wiring.*
+## Product highlights
 
-## Product decisions
+**A stable destination for campaigns.** The `/as-seen-on-socials` approach is designed to work with traffic from different social platforms.
 
-1. **One reusable destination.** A channel-neutral “as seen on socials” route avoids creating a new landing page for every marketing platform.
-2. **Mobile-first browsing.** The visitor should be able to identify a featured product quickly on a small screen.
-3. **Consistent product information.** Product details, available sizes, and prices need to match the actual catalogue.
-4. **Direct ordering paths.** The entry page should help users reach existing product detail and checkout processes rather than create a competing purchase workflow.
-5. **Measurement without guesswork.** A useful analytics design would distinguish campaign visits, product selections, and downstream conversion events. No conversion-rate improvement is claimed here.
+**Mobile-first browsing.** Product presentation prioritizes quick recognition, strong imagery, and straightforward navigation.
 
-## What I would evaluate
+**Consistent product details.** Price, available sizes, and ordering information belong close to the product itself.
 
-| Question | Possible evidence |
-| --- | --- |
-| Can a new visitor find a promoted product? | Observed product selection task |
-| Is the page usable on narrow screens? | Mobile viewport review |
-| Do campaign links reach the right destination? | Link and route checks |
-| Can admins distinguish campaign traffic? | Defined event naming and reporting |
-| Do listings agree with the catalogue? | Content consistency checks |
+**Curated identity.** Fashion categories and styling-led discovery give the storefront a recognizable shopping experience.
 
-The checks above are **evaluation criteria**, not claims that they have already been executed.
+## Engineering and design focus
 
-## Evidence and limits
+**React-based commerce interfaces · Product catalogue UX · Responsive layouts · Social traffic journeys**
 
-This is primarily a user-journey and product-design case study. It should be supplemented with approved real screenshots, implementation evidence, and actual measured outcomes before being treated as a technical source-code case study.
-
-[← Engineering portfolio](../README.md)
+[← All projects](../README.md)
