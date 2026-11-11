@@ -1,62 +1,46 @@
-# Case study: Product, content, and publishing platform
+# Innovvo Tech: Product Portfolio and Publishing Platform
 
-**Discipline:** Full-stack web architecture · Content workflows · Reliability  
-**Evidence:** Private project README, application dependencies, and build scripts reviewed in November 2026  
-**Source availability:** Private; the diagram is deliberately simplified.
+**Full-stack development · Content systems · Product engineering**
 
-## The product challenge
+Innovvo Tech brings multiple digital products, project stories, research, and business inquiries together in one web experience.
 
-A studio website needs to connect its product portfolio, evidence of work, editorial updates, and inquiry paths. As content grows, the site becomes an application with publishing workflows, rather than a group of static landing pages.
+[Explore Innovvo Tech](https://innovvo-tech.vercel.app/)
 
-## Verified technical foundation
+## The challenge
 
-- **Next.js 16 App Router**, React 19, and TypeScript
-- Tailwind CSS for UI presentation
-- Application routes for product, work, and editorial content
-- Protected editorial/operations scope described in repository documentation
-- Server-side services for persistence and communications, described at a high level
-- A build script that runs an automated publishing-related test suite before the Next.js build
+A technology business needs more than a static homepage. Visitors should be able to discover products, explore the problems they solve, review technical work, and find relevant insights without navigating disconnected websites.
 
-## Simplified architecture
+## The solution
+
+The platform brings together a product portfolio, individual product pages, editorial updates, opportunity research, and contact workflows.
+
+It also separates public-facing pages from protected editorial operations, allowing site content to change without requiring every update to be made as an application-code deployment.
+
+## Architecture at a glance
 
 ```mermaid
-flowchart TD
-  A["Site visitor"] --> B["Public Next.js pages"]
-  C["Authorized editor"] --> D["Protected editorial workspace"]
-  D --> E["Server-side workflows"]
-  B --> E
-  E --> F["Persistent content and application data"]
-  E --> G["Messaging and notification service"]
-  F --> B
+flowchart LR
+  V["Visitors"] --> P["Public pages and product stories"]
+  E["Editors"] --> W["Protected content workspace"]
+  W --> S["Application workflows"]
+  S --> D["Persistent content"]
+  D --> P
 ```
 
-*Illustrative logical boundaries, not a network, security, or deployment diagram.*
+## Engineering highlights
 
-## The interesting engineering decisions
+**App Router structure.** The site uses Next.js 16, React 19, and TypeScript to organize multiple kinds of content into a coherent product experience.
 
-### Content updates should not require code changes
+**Content and code as separate concerns.** Database-backed editorial workflows help keep routine publishing work distinct from the release of application code.
 
-The repository documents a distinction between application code and editable content. This allows product information or editorial state to evolve independently from changes to source code, provided the system enforces appropriate authorization and validation.
+**Checks around important flows.** The project's build configuration includes automated checks for publishing-related behavior before building the Next.js application.
 
-### Publishing is a workflow
+**Product storytelling.** Product profiles and build stories explain not just what a product does, but the problem it is built to address.
 
-Content may pass through draft, review, and publication stages. The important engineering questions are who may make transitions, how changes are represented, and what happens when publication fails.
+## Technology
 
-### Test the business-critical edges
+**Next.js 16 · React 19 · TypeScript · Tailwind CSS · Server-side application logic · PostgreSQL-based content workflows**
 
-The build configuration invokes a test suite covering areas such as publication-related data contracts, catalogue handling, anti-spam checks, email templates, and reader-facing delivery flows. The presence and placement of these checks are verified; **the latest test results and coverage percentages were not established**.
+[Related: Engineering practices and testing](quality-and-testing.md)
 
-For a closer look at the testing approach, see [Engineering quality and verification](quality-and-testing.md).
-
-## Interview discussion prompts
-
-- Where should content state live, and why?
-- How can editorial operations avoid accidentally triggering public releases?
-- Which invariants belong in tests around subscriptions and publishing?
-- How do you maintain a clear boundary between code deployment and editorial changes?
-
-## Evidence and limits
-
-Architecture and feature scope were derived from repository documentation and manifests. This does not establish production uptime, traffic, commercial outcomes, a completed audit, or verified effectiveness of security controls. Proprietary implementation details are intentionally excluded.
-
-[← Engineering portfolio](../README.md)
+[← All projects](../README.md)
