@@ -1,32 +1,47 @@
 # Case study: Social-to-store retail discovery
 
-**Domain:** E-commerce user journeys and social traffic conversion  
-**Code visibility:** Private work; product-level summary.
+**Discipline:** Product UX · Mobile-first frontend journeys · E-commerce  
+**Evidence:** Product requirements and implementation discussions; source-level audit not included  
+**Source availability:** Private.
 
-## Context
+## The user problem
 
-Customers arriving from short-form social posts often remember the product they saw, not its catalogue title. A shopping experience designed for that journey can reduce the effort required to locate a featured item.
+A visitor sees a product in a short-form social video, follows a link, and needs to identify the exact product without browsing an unrelated catalogue. If the destination is confusing, interest can disappear before the customer reaches a product page.
 
-## Product and UX scope
+## The intended journey
 
-The project work includes a dedicated **“as seen on socials”** discovery experience, product-focused presentation, and clear paths from promotional content to relevant store items.
+```mermaid
+flowchart LR
+  V["Social post"] --> L["Campaign landing page"]
+  L --> F["Featured product discovery"]
+  F --> P["Product details"]
+  P --> A["Existing order flow"]
+```
 
-A useful approach for this kind of journey is to keep the entry page mobile-first, let customers identify the product quickly, and send them to an existing product detail or ordering flow.
+*Journey map, not an audited representation of internal application wiring.*
 
-## Engineering and product questions
+## Product decisions
 
-- How should a social campaign link map to a stable catalogue destination?
-- How can featured products stay discoverable as campaigns change?
-- Which browsing interactions matter most on a small mobile screen?
-- How should product photography, sizing, pricing, and calls to action fit together?
-- What traffic and conversion events can be measured without claiming unverified performance?
+1. **One reusable destination.** A channel-neutral “as seen on socials” route avoids creating a new landing page for every marketing platform.
+2. **Mobile-first browsing.** The visitor should be able to identify a featured product quickly on a small screen.
+3. **Consistent product information.** Product details, available sizes, and prices need to match the actual catalogue.
+4. **Direct ordering paths.** The entry page should help users reach existing product detail and checkout processes rather than create a competing purchase workflow.
+5. **Measurement without guesswork.** A useful analytics design would distinguish campaign visits, product selections, and downstream conversion events. No conversion-rate improvement is claimed here.
 
-## What this demonstrates
+## What I would evaluate
 
-A product-development approach that connects acquisition, landing-page UX, product discovery, and maintainable content workflows.
+| Question | Possible evidence |
+| --- | --- |
+| Can a new visitor find a promoted product? | Observed product selection task |
+| Is the page usable on narrow screens? | Mobile viewport review |
+| Do campaign links reach the right destination? | Link and route checks |
+| Can admins distinguish campaign traffic? | Defined event naming and reporting |
+| Do listings agree with the catalogue? | Content consistency checks |
 
-## Evidence and boundaries
+The checks above are **evaluation criteria**, not claims that they have already been executed.
 
-This is a high-level account of product work, **not a source-code release or verified performance report**. Client identities, internal tracking implementations, database details, and conversion metrics are not disclosed.
+## Evidence and limits
 
-[← All case studies](../README.md)
+This is primarily a user-journey and product-design case study. It should be supplemented with approved real screenshots, implementation evidence, and actual measured outcomes before being treated as a technical source-code case study.
+
+[← Engineering portfolio](../README.md)
