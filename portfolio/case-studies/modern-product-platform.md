@@ -1,61 +1,46 @@
-# Case study: Customer product and operations dashboard
+# Traffmint: Social Commerce Platform
 
-**Discipline:** Frontend architecture · Async data · TypeScript  
-**Evidence:** Private application package manifests and selected frontend modules reviewed in November 2026  
-**Source availability:** Private; architecture below is an abstraction, not a copy of internal infrastructure.
+**Product engineering · Frontend architecture · Business operations**
 
-## The engineering problem
+Traffmint is designed to bring the scattered parts of social selling into a more connected workflow. Sellers need to manage products, promote their offers, and understand what happens after a link is shared.
 
-A customer-facing web product and an operational dashboard have different navigation, access, and interaction requirements. Treating them as separate applications can make their responsibilities clearer, while introducing a need for disciplined API contracts.
+[Explore Traffmint](https://innovvo-tech.vercel.app/products/traffmint)
 
-## Verified implementation footprint
+## The challenge
 
-| Customer experience | Operational experience |
-| --- | --- |
-| Next.js, React, TypeScript | React, Vite, TypeScript |
-| TanStack Query, Axios | TanStack Query, Axios |
-| Zod validation | React Router and Tailwind CSS |
-| Route-oriented pages and product flows | Dashboard-style navigation and data-driven views |
+Social-commerce workflows frequently spread across storefronts, promotional links, messaging channels, and dashboards. This makes it harder to connect campaign activity with the products being sold.
 
-These technologies were verified from source manifests. This table describes frontend scope and **does not assert** that both apps share a specific backend, deployment, database, or authentication provider.
+## The product approach
 
-## Architectural view
+The engineering work includes two distinct web experiences:
+
+- **Customer-facing application:** a Next.js and TypeScript interface for the main product experience
+- **Operations dashboard:** a React, Vite, and TypeScript application for administration and reporting workflows
+
+The repositories use TanStack Query and Axios for asynchronous data handling. The customer application also includes Zod for runtime validation.
+
+## Architecture at a glance
 
 ```mermaid
 flowchart LR
-  C["Customer"] --> W["Customer-facing Next.js application"]
-  O["Operations user"] --> D["React administrative application"]
-  W --> Q["Typed data-fetching and validation layer"]
-  D --> R["Data-fetching and dashboard state"]
-  Q --> X["Application service interfaces"]
-  R --> X
+  S["Seller"] --> W["Customer-facing web app"]
+  O["Operations team"] --> A["Admin dashboard"]
+  W --> D["Data fetching and validation"]
+  A --> E["Dashboard data layer"]
+  D --> F["Application services"]
+  E --> F
 ```
 
-*Conceptual frontend integration diagram. Service interfaces represent boundaries, not a published system topology.*
+## Engineering highlights
 
-## Engineering decisions worth discussing
+**Two experiences, different priorities.** The seller-facing product and operational dashboard are organized as separate interfaces, allowing navigation and interactions to suit their users.
 
-### Separate user journeys
+**Predictable data handling.** Typed interfaces, asynchronous state management, and request validation help structure complex frontend workflows.
 
-Different user groups need different information density and interaction patterns. The public-facing experience prioritizes clear user journeys, while the administration experience requires efficient navigation around operational data.
+**Room to evolve.** The application separation supports product development without forcing all user journeys into one UI.
 
-### Server state is not UI state
+## Technology
 
-The applications use TanStack Query. In an interview, useful topics include caching, stale data, invalidation, failure states, and why remote data should not automatically be treated like local component state.
+**Next.js · React · TypeScript · Vite · TanStack Query · Axios · Zod · Tailwind CSS**
 
-### Validate at boundaries
-
-The customer-facing project's dependency manifest includes Zod. Schema validation is relevant where user input or API data crosses a trust boundary. This is a technical capability present in the stack, not a claim that every endpoint is comprehensively validated.
-
-## Review conversation
-
-- How do you decide when to split a product into separate frontends?
-- What does a consistent data-fetching and error-handling strategy look like?
-- Where should runtime validation happen in a TypeScript application?
-- How would you keep two interfaces coherent without over-coupling them?
-
-## Evidence and limits
-
-This case study is grounded in verified dependencies and selected modules. Runtime performance, availability, test coverage, business impact, and security properties were **not independently measured**. No client data or proprietary source is published.
-
-[← Engineering portfolio](../README.md)
+[← All projects](../README.md)
