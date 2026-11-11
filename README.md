@@ -6,7 +6,7 @@
 
 I develop web applications for product discovery, digital publishing, education, and business operations. My work spans accessible interfaces, API integration, server-side logic, data-driven workflows, and maintainable application structure.
 
-**[Explore my recent engineering portfolio](portfolio/README.md)** · **[Architecture notes](portfolio/architecture/README.md)** · **[Testing and quality case study](portfolio/case-studies/quality-and-testing.md)**
+**[Live visual previews of public products](portfolio/visual-previews/README.md)** · **[Explore my engineering portfolio](portfolio/README.md)** · **[Architecture notes](portfolio/architecture/README.md)** · **[Testing and quality case study](portfolio/case-studies/quality-and-testing.md)**
 
 ## Recent engineering work
 
