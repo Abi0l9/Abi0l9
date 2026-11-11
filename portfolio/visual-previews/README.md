@@ -40,6 +40,36 @@ This page adds a visual layer to the [engineering portfolio](../README.md) while
 
 **What this does not prove:** the correctness of every calculation, accessibility conformance, test coverage, or error rates. Those require source review and targeted testing.
 
+## 4. PartyDey: event operations platform
+
+[**Explore PartyDey's public website**](https://www.partydey.com/)
+
+[![Dynamic public-site thumbnail of PartyDey by Thum.io, not an archived or independently verified screenshot](https://image.thum.io/get/width/960/crop/800/noanimate/https://www.partydey.com/)](https://www.partydey.com/)
+
+**Public-facing product scope:** event planning and hosting workflows, celebration contributions or payments, guest coordination, and access-control features. The [public PartyDey login page](https://www.partydey.com/auth/login) describes these areas; the [Innovvo Tech product profile](https://innovvo-tech.vercel.app/products/partydey) provides additional product context.
+
+**Evidence boundary:** this public thumbnail does not show authenticated host dashboards, actual transactions, guest lists, financial records, or the correctness of QR admission checks. The homepage itself could not be independently loaded by the review tool, so this image is an **on-demand preview**, not a verified still.
+
+## 5. Meenahfection Store: public e-commerce experience
+
+[**Explore the Meenahfection Store website**](https://www.meenahfection.store/)
+
+[![Dynamic public-site thumbnail of Meenahfection Store by Thum.io, not an archived or independently verified screenshot](https://image.thum.io/get/width/960/crop/800/noanimate/https://www.meenahfection.store/)](https://www.meenahfection.store/)
+
+**What can be inspected on the public storefront:** a fashion and lifestyle product discovery experience, curated product categories, a styling-led shopping journey, and paths toward checkout or purchase assistance.
+
+**Engineering focus:** information architecture for commerce, mobile shopping journeys, product presentation, and moving visitors from discovery toward product details. This thumbnail is **not** evidence that an actual order was placed or a checkout was tested. The publicly indexed storefront was identified in November 2026; the latest thumbnail pixels were not independently inspected.
+
+## 6. Occassionly: digital event invitations and access
+
+[**Open the Occassionly website**](https://occassionly.com/) · [**View the public Innovvo product profile**](https://innovvo-tech.vercel.app/products/occassionly)
+
+[![Dynamic public-site thumbnail requested for Occassionly's established domain by Thum.io; may be unavailable or stale](https://image.thum.io/get/width/960/crop/800/noanimate/https://occassionly.com/)](https://occassionly.com/)
+
+**Public product description:** digital event invitations, QR-based guest access credentials, guest verification, and check-in workflows. These capabilities are described on the [Innovvo product page](https://innovvo-tech.vercel.app/products/occassionly).
+
+**Verification status:** the standalone domain is an established product link, but it **was not independently accessible in the November 2026 web review**. The public Innovvo page is an alternative that can be inspected, although its product-gallery screenshot frames are still explicitly marked as placeholders. This preview should **not** be interpreted as a verified screenshot of the live check-in console or of a guest's private credential.
+
 ---
 
 ## Capture integrity and limitations
