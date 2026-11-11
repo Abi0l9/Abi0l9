@@ -1,53 +1,59 @@
-# Architecture notes
+# Architecture at a Glance
 
-These are **conceptual diagrams** attached to [recent product case studies](../README.md). They explain responsibilities and boundaries at a level suitable for a public engineering portfolio.
+A closer look at the patterns behind selected products, from multi-interface web applications to content publishing and commerce discovery.
 
-They are **not** production network maps, security diagrams, or disclosures of private repository structure.
+## Traffmint: Customer and operations interfaces
 
-## Customer-facing product and operations
+Traffmint's customer-facing application and administrative dashboard serve different users and workflows.
 
 ```mermaid
 flowchart TB
-  User["Customer"] --> Web["Next.js + TypeScript web interface"]
-  Operator["Operations user"] --> Admin["React + TypeScript dashboard"]
-  Web --> UX["Data fetching and validation"]
-  Admin --> DX["Dashboard data fetching"]
-  UX --> Services["Service boundary"]
-  DX --> Services
+  S["Seller"] --> W["Next.js product application"]
+  A["Operations team"] --> D["React dashboard"]
+  W --> Q["Typed data fetching"]
+  D --> R["Dashboard state and requests"]
+  Q --> B["Application service layer"]
+  R --> B
 ```
 
-**Engineering focus:** Different user journeys, shared conceptual contract boundaries, typed data, asynchronous state, and error handling.
+**Engineering focus:** separating user experiences, handling asynchronous data, validation, and designing maintainable frontend boundaries.
 
-[Read the case study](../case-studies/modern-product-platform.md)
+[Read the Traffmint case study](../case-studies/modern-product-platform.md)
 
-## Editorial publishing platform
+## Innovvo Tech: Content and product publishing
+
+The public portfolio and editorial workflows connect through server-side application logic and persistent content.
 
 ```mermaid
 flowchart LR
-  Editor["Authorized editor"] --> Workspace["Protected editorial workflow"]
-  Workspace --> Application["Server-side application logic"]
-  Application --> Persistence["Persistent application data"]
-  Visitor["Visitor"] --> Public["Public content pages"]
-  Persistence --> Public
+  V["Visitors"] --> P["Public portfolio and insights"]
+  E["Editors"] --> W["Editorial workspace"]
+  W --> S["Application workflows"]
+  S --> C["Content storage"]
+  C --> P
 ```
 
-**Engineering focus:** Application code versus editable content, publication states, data ownership, and release checks.
+**Engineering focus:** App Router design, content lifecycles, publishing workflows, and separating editorial changes from application releases.
 
-[Read the case study](../case-studies/technology-studio.md)
+[Read the Innovvo Tech case study](../case-studies/technology-studio.md)
 
-## Commerce discovery journey
+## Meenahfection Store: Social-to-store discovery
+
+A customer arriving from a social post should be able to reach the product they came to find.
 
 ```mermaid
 flowchart LR
-  Social["Social content"] --> Discovery["Featured-product discovery"]
-  Discovery --> Product["Product details"]
-  Product --> Checkout["Existing purchase journey"]
+  S["Social media post"] --> F["Featured-product page"]
+  F --> P["Product details"]
+  P --> O["Purchase journey"]
 ```
 
-**Product focus:** Stable campaign destinations, mobile usability, consistent listings, and clear calls to action.
+**Product focus:** mobile-first navigation, campaign destinations, consistent product information, and clear ordering paths.
 
-[Read the case study](../case-studies/retail-discovery.md)
+[Read the Meenahfection case study](../case-studies/retail-discovery.md)
 
-## Responsible public documentation
+---
 
-No secret values, internal service addresses, credentials, database schemas, access controls, unreleased features, or client records are included. The diagrams are deliberately simplified for communication, not operational reconstruction.
+*Diagrams are simplified illustrations of system responsibilities, not internal infrastructure maps.*
+
+[← Explore the full portfolio](../README.md)
