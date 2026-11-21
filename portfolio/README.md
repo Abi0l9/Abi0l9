@@ -17,6 +17,8 @@ An online learning environment for Arabic and Islamic studies. Learners can foll
 
 **Use cases:** self-paced Arabic study, Islamic education, course organization, tutor-led learning, and tracking lesson progress.
 
+[Read the OpenMadrasah engineering case study](case-studies/openmadrasah.md)
+
 ### PartyDey · Event management
 
 **[Explore PartyDey](https://www.partydey.com/)**
@@ -24,6 +26,8 @@ An online learning environment for Arabic and Islamic studies. Learners can foll
 A digital platform that brings event hosting, celebration contributions, guest coordination, and admission management into a connected experience.
 
 **Use cases:** organizing celebrations, handling contribution workflows, managing invited guests, and coordinating entry.
+
+[Read the PartyDey engineering case study](case-studies/partydey.md)
 
 ### Occassionly · Event access technology
 
@@ -41,7 +45,7 @@ A workspace designed to connect product organization, promotion across social ch
 
 **Use cases:** managing product offers, organizing campaigns, sharing trackable links, and understanding promotional activity.
 
-[Technical case study: customer product and operations dashboard](case-studies/modern-product-platform.md)
+[Read the Traffmint engineering case study](case-studies/modern-product-platform.md)
 
 ### Meenahfection Store · E-commerce
 
@@ -85,10 +89,12 @@ The work spans **React, Next.js, TypeScript, Node.js, Express, GraphQL, MongoDB,
 
 For readers interested in implementation and trade-offs:
 
-- [Product interfaces and operational dashboards](case-studies/modern-product-platform.md)
-- [Publishing workflows and platform architecture](case-studies/technology-studio.md)
+- **[OpenMadrasah: role-aware learning and content review](case-studies/openmadrasah.md)**
+- **[PartyDey: event operations, payments, and guest access](case-studies/partydey.md)**
+- **[Traffmint: social commerce, analytics, and dashboard architecture](case-studies/modern-product-platform.md)**
+- [Innovvo Tech: publishing workflows and platform architecture](case-studies/technology-studio.md)
 - [Testing and release practices](case-studies/quality-and-testing.md)
-- [UX and product discovery](case-studies/retail-discovery.md)
+- [Meenahfection Store: social-to-store product discovery](case-studies/retail-discovery.md)
 - [Architecture diagrams](architecture/README.md)
 
 ## Let's work together
