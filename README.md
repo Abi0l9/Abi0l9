@@ -1,13 +1,13 @@
 # Monsur Muhammad
 
-**Full-Stack Developer · Product Engineer**  
+**Full-Stack Software Developer | Product Engineer**  
 **React · Next.js · TypeScript · Node.js**
 
-Based in Nigeria. Open to remote and international software engineering opportunities.
+I build web applications that help people learn, organize events, shop, and run businesses. My work spans user-facing interfaces, backend APIs, data-driven workflows, and product delivery.
 
-I design and build practical digital products, from user-facing experiences to APIs, dashboards, content systems, and business workflows. My work spans education, event technology, e-commerce, and tools that help people get things done.
+**Based in Nigeria · Open to remote and international engineering opportunities**
 
-**[Explore my products](portfolio/README.md)** · **[View live website previews](portfolio/visual-previews/README.md)** · **[Engineering case studies](portfolio/README.md#engineering-behind-the-products)**
+**[Explore my product portfolio](portfolio/README.md)** · **[View live product previews](portfolio/visual-previews/README.md)** · **[Engineering case studies](portfolio/README.md#engineering-behind-the-products)** · **[Contact me](mailto:monsurkashy@gmail.com)**
 
 ## Featured products
 
@@ -30,13 +30,8 @@ I design and build practical digital products, from user-facing experiences to A
 - **Data:** MongoDB, Mongoose, PostgreSQL, SQLAlchemy
 - **Engineering:** Authentication, integrations, testing, Git/GitHub, and deployment workflows
 
-## Building with purpose
+## Let's connect
 
-I focus on solving real user problems through clear interfaces, maintainable systems, and thoughtful engineering decisions. My portfolio includes both independent products and commercial applications.
+Available for full-stack, frontend, and backend engineering opportunities, including remote and international teams.
 
-## Get in touch
-
-I'm interested in full-stack, frontend, and backend engineering roles, as well as product-focused collaborations.
-
-**Email:** [monsurkashy@gmail.com](mailto:monsurkashy@gmail.com)  
-**Portfolio:** [Products and engineering work](portfolio/README.md)
+**[Email](mailto:monsurkashy@gmail.com)** · **[Portfolio](portfolio/README.md)**
