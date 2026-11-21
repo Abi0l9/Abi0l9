@@ -1,59 +1,66 @@
 # Architecture at a Glance
 
-A closer look at the patterns behind selected products, from multi-interface web applications to content publishing and commerce discovery.
+Selected system-design decisions from my product work. These diagrams explain **responsibilities and user journeys**, rather than deployment infrastructure.
 
-## Traffmint: Customer and operations interfaces
+## OpenMadrasah: Learning, teaching, and review
 
-Traffmint's customer-facing application and administrative dashboard serve different users and workflows.
+A shared learning platform serves three roles without mixing their responsibilities.
 
 ```mermaid
 flowchart TB
-  S["Seller"] --> W["Next.js product application"]
-  A["Operations team"] --> D["React dashboard"]
-  W --> Q["Typed data fetching"]
-  D --> R["Dashboard state and requests"]
-  Q --> B["Application service layer"]
-  R --> B
+  Student["Student"] --> Web["Next.js learning experience"]
+  Tutor["Tutor"] --> Web
+  Admin["Administrator"] --> Web
+  Web --> Contract["Shared validation contracts"]
+  Contract --> Services["Express services"]
+  Services --> Data["Learning and course data"]
 ```
 
-**Engineering focus:** separating user experiences, handling asynchronous data, validation, and designing maintainable frontend boundaries.
+**Focus:** role-based workflows, shared data contracts, course publication review, and progress-aware learning.
 
-[Read the Traffmint case study](../case-studies/modern-product-platform.md)
+[OpenMadrasah engineering case study](../case-studies/openmadrasah.md)
 
-## Innovvo Tech: Content and product publishing
+## PartyDey: Hosting, payments, and event access
 
-The public portfolio and editorial workflows connect through server-side application logic and persistent content.
+An event workflow has to connect digital coordination with on-site operations.
 
 ```mermaid
-flowchart LR
-  V["Visitors"] --> P["Public portfolio and insights"]
-  E["Editors"] --> W["Editorial workspace"]
-  W --> S["Application workflows"]
-  S --> C["Content storage"]
-  C --> P
+flowchart TB
+  Users["Hosts, guests, event staff"] --> Web["Next.js experience"]
+  Web --> API["Application services"]
+  API --> Events["Event and guest management"]
+  API --> Payments["Payment workflows"]
+  API --> Access["Access and attendance"]
 ```
 
-**Engineering focus:** App Router design, content lifecycles, publishing workflows, and separating editorial changes from application releases.
+**Focus:** service boundaries, reliable state transitions, payment recovery, and guest admission decisions.
 
-[Read the Innovvo Tech case study](../case-studies/technology-studio.md)
+[PartyDey engineering case study](../case-studies/partydey.md)
 
-## Meenahfection Store: Social-to-store discovery
+## Traffmint: Seller and administration interfaces
 
-A customer arriving from a social post should be able to reach the product they came to find.
+Seller workflows and operational dashboards have different needs, even when they are part of one product.
 
 ```mermaid
-flowchart LR
-  S["Social media post"] --> F["Featured-product page"]
-  F --> P["Product details"]
-  P --> O["Purchase journey"]
+flowchart TB
+  Seller["Seller"] --> Product["Next.js product application"]
+  Operator["Operations"] --> Dashboard["React admin dashboard"]
+  Product --> SellerData["Product, lead and analytics UI"]
+  Dashboard --> AdminData["Operational views"]
+  SellerData --> Boundary["Application service boundaries"]
+  AdminData --> Boundary
 ```
 
-**Product focus:** mobile-first navigation, campaign destinations, consistent product information, and clear ordering paths.
+**Focus:** separate user experiences, typed asynchronous data, and analytics-oriented presentation.
 
-[Read the Meenahfection case study](../case-studies/retail-discovery.md)
+[Traffmint engineering case study](../case-studies/modern-product-platform.md)
 
----
+## More engineering work
 
-*Diagrams are simplified illustrations of system responsibilities, not internal infrastructure maps.*
+- [Innovvo Tech: editorial content and publishing workflows](../case-studies/technology-studio.md)
+- [Meenahfection Store: social-to-store product discovery](../case-studies/retail-discovery.md)
+- [Engineering practices: testing and release quality](../case-studies/quality-and-testing.md)
+
+*Architectures are simplified for public presentation.*
 
 [← Explore the full portfolio](../README.md)
