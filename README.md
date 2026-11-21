@@ -21,6 +21,8 @@ I build web applications that help people learn, organize events, shop, and run 
 | **[Innovvo Tools](https://tools.innovvohq.online/tools/true-profit-calculator)** | Practical calculators and decision tools, including profit and break-even analysis | Entrepreneurs and small businesses |
 | **[Innovvo Tech](https://innovvo-tech.vercel.app/)** | Product portfolio, technical services, insights, and company publishing | Businesses and product teams |
 
+**Flagship engineering case studies:** [OpenMadrasah](portfolio/case-studies/openmadrasah.md) · [PartyDey](portfolio/case-studies/partydey.md) · [Traffmint](portfolio/case-studies/modern-product-platform.md)
+
 **[Browse screenshots and live previews of six products](portfolio/visual-previews/README.md)**
 
 ## Technology I work with
